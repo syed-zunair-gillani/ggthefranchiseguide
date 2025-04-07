@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --brand-blue: #0077be;
+  --brand-orange: #ffa500;
+}
+
+
+.font_caveat {
+  font-family: "Caveat", cursive !important;
+}
+.font_montserrat {
+  font-family: "Montserrat", sans-serif !important;
+}
+.font_roboto {
+  font-family: "Roboto", sans-serif !important;
+}
+.font_aleo {
+  font-family: "Aleo", serif;
+}
+
+/* Add smooth scrolling behavior to html */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Base styles for Elementor content */
+  .elementor-content {
+    @apply w-full mx-auto;
+  }
+
+  /* Section styles */
+  .elementor-section {
+    @apply relative w-full py-12 md:py-16 lg:py-24;
+  }
+
+  .elementor-section-boxed > .elementor-container {
+    @apply container mx-auto px-4 md:px-6;
+  }
+
+  /* Typography */
+  .elementor-heading-title {
+    @apply font-bold mb-4;
+  }
+
+  .elementor-size-xxl {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  .elementor-size-xl {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .elementor-size-large {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  /* Buttons */
+  .elementor-button {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-semibold transition-all duration-200;
+  }
+
+  .elementor-button-primary {
+    @apply bg-brand-blue text-white hover:bg-brand-blue/90;
+  }
+
+  .elementor-button-secondary {
+    @apply bg-brand-orange text-white hover:bg-brand-orange/90;
+  }
+
+  /* Grid and Layout */
+  .elementor-grid {
+    @apply grid gap-6;
+  }
+
+  .elementor-grid-2 {
+    @apply grid-cols-1 md:grid-cols-2;
+  }
+
+  .elementor-grid-3 {
+    @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  /* Images */
+  .elementor-widget-image img {
+    @apply max-w-full h-auto rounded-lg;
+  }
+
+  /* Cards */
+  .elementor-card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden;
+  }
+
+  /* Icons */
+  .elementor-icon {
+    @apply inline-flex items-center justify-center w-12 h-12 rounded-full bg-brand-blue text-white;
+  }
+
+  /* Testimonials */
+  .elementor-testimonial {
+    @apply text-center p-8 bg-white rounded-lg shadow-lg;
+  }
+
+  /* Forms */
+  .elementor-form {
+    @apply space-y-6;
+  }
+
+  .elementor-field-group {
+    @apply mb-4;
+  }
+
+  .elementor-field-textual {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-blue/50;
+  }
+}
+
+/* Animations */
+@keyframes elementorFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.elementor-animate-fade-in {
+  animation: elementorFadeIn 0.6s ease-out forwards;
+}
+
+/* Dark mode support */
+.dark .elementor-card {
+  @apply bg-gray-800;
+}
+
+.dark .elementor-heading-title {
+  @apply text-white;
+}
+
+.dark .elementor-button-primary {
+  @apply bg-brand-blue text-white hover:bg-brand-blue/80;
+}
+
+.dark .elementor-button-secondary {
+  @apply bg-brand-orange text-white hover:bg-brand-orange/80;
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
