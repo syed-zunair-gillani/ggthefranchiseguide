@@ -3,7 +3,7 @@ import BackgroundImage from '../../public/images/main.webp'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Hero = () => {
+const  Hero = () => {
   return (
     <main className='min-h-screen w-full bg-cover bg-no-repeat flex justify-center relative' style={{
         backgroundImage: `url(${BackgroundImage.src})`,
