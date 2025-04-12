@@ -180,3 +180,30 @@
   }
 }
 
+.content{
+  font-family: "Aleo", serif;
+}
+.content p{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.content ul{
+  margin: 1rem 0;
+  font-size: 20px;
+  list-style-type: disc;
+  padding-left: 1.7rem;
+  font-weight: 500;
+}
+.content h2{
+  font-size: 34px;
+  font-weight: 700;
+  margin: .7rem 0;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+@media (max-width: 768px) {
+  .content h2{
+    font-size: 22px;
+  }
+}
