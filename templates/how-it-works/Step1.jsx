@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import BackgroundImage from "../../public/images/pexels-karolina.jpg";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -44,7 +43,7 @@ const Step1 = () => {
       {/* Image */}
       <div className="w-full flex justify-center">
         <Image
-          src={BackgroundImage.src}
+          src="/images/step-1.jpg"
           alt="Franchise Consultation"
           width={500}
           height={500}

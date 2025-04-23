@@ -1,20 +1,19 @@
 "use client";
 import React from 'react';
-import BackgroundImage from "../../public/images/IMG_4186.jpeg";
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Step3 = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         {/* Image */}
       <div className="">
         <Image
-          src={BackgroundImage.src}
+          src="/images/press-kit.webp"
           alt="Franchise Consultation"
           width={200}
           height={300}
-          className="w-full md:h-[700px] h-auto"
+          className="w-full md:h-[700px] object-cover h-auto"
         />
       </div>
       {/* Text content */}

@@ -8,7 +8,7 @@ import Step2 from "@/templates/how-it-works/Step2"
 import Step3 from "@/templates/how-it-works/Step3"
 import Step4 from "@/templates/how-it-works/Step4"
 
-const howitwork = () => {
+const HowItWork = () => {
   return (
     <>
        <Hero />
@@ -23,4 +23,4 @@ const howitwork = () => {
   );
 };
 
-export default howitwork;
+export default HowItWork;
