@@ -1,12 +1,10 @@
 import React from "react";
-import BackgroundImage from "../../public/images/main.webp";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { faqPageQuery } from "@/services";
 
 const Faqs = async () => {
   const page = await faqPageQuery();
-  console.log("🚀 ~ Faqs ~ page:", page?.faqPageMeta?.faq);
 
   if (!page) {
     return notFound();

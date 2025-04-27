@@ -120,10 +120,10 @@ export default function Header() {
 
             <DropdownMenu>
               <DropdownMenuTrigger
-                className={`flex items-center font-medium text-sm ${
+                className={`flex items-center bg-white font-medium text-sm ${
                   resourceItems.some((item) => isActive(item.href))
                     ? "text-[#FFA500]"
-                    : "text-[#0077be] hover:text-[#0077be]/80"
+                    : "text-[#0077be] hover:text-[#0077be]/80 cursor-pointer"
                 }`}
               >
                 RESOURCES <ChevronDown className="ml-1 h-4 w-4" />

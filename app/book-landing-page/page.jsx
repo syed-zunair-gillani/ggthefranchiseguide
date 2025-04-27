@@ -4,7 +4,6 @@ import { bookPageQuery } from '@/services';
 
 const Book = async () => {
   const page = await bookPageQuery();
-  console.log("🚀 ~ Book ~ page:", page);
 
   if (!page) {
     return notFound();
@@ -12,7 +11,7 @@ const Book = async () => {
 
   return (
     <>
-      <BookTemplate />
+      <BookTemplate data={page?.bookPageMeta}/>
     </>
   )
 }
