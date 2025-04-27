@@ -5,14 +5,13 @@ import { notFound } from "next/navigation";
 
 const PressKit = async () => {
   const page = await pressKitPageQuery();
-  console.log("🚀 ~ PressKit ~ page:", page);
 
   if (!page) {
     return notFound();
   }
   return (
     <>
-      <PressKitTemplate />
+      <PressKitTemplate data={page?.pressKitPageMeta}/>
     </>
   );
 };

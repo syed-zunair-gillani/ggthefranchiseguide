@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 
 const About = async () => {
   const page = await aboutPageQuery();
-  console.log("🚀 ~ About ~ page:", page);
 
   if (!page) {
     return notFound();
@@ -14,8 +13,8 @@ const About = async () => {
 
   return (
     <>
-      <Main />
-      <GetBook />
+      <Main data={page?.aboutMePageMeta?.about}/>
+      <GetBook data={page?.aboutMePageMeta?.workWithUs}/>
     </>
   );
 };

@@ -15,6 +15,7 @@ import { notFound } from "next/navigation";
 
 export default async function Home() {
   const page = await homePageQuery()
+  const {homePageMeta} = page;
     
   if (!page) {
     return notFound();
@@ -22,16 +23,16 @@ export default async function Home() {
 
   return (
     <>
-      <Hero />
+      <Hero data={homePageMeta?.hero}/>
       <OurClients />
-      <LeftRight />
-      <WorkWithUs />
-      <StepsSection />
-      <Reviews />
-      <Videos />
-      <Following />
-      <GetBook />
-      <MeetGiuseppe />
+      <LeftRight data={homePageMeta?.leftAndRightSection}/>
+      <WorkWithUs data={homePageMeta?.workWithUs}/>
+      <StepsSection data={homePageMeta?.steps}/>
+      <Reviews data={homePageMeta?.review}/>
+      <Videos data={homePageMeta?.videos}/>
+      <Following data={homePageMeta?.whatsIncluded}/>
+      <GetBook data={homePageMeta?.freeBook}/>
+      <MeetGiuseppe data={homePageMeta?.meetGiuseppe}/>
       <NewsLetter />
       <section className="flex flex-col sm:flex-row px-2 justify-center items-center gap-20 md:gap-40 py-20">
         <Image src="/images/logo-1.png" alt="" width={166} height={166} />

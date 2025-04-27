@@ -5,7 +5,6 @@ import { workshopPageQuery } from "@/services";
 
 const Workshop = async () => {
   const page = await workshopPageQuery();
-  console.log("🚀 ~ Workshop ~ page:", page);
 
   if (!page) {
     return notFound();
@@ -13,7 +12,7 @@ const Workshop = async () => {
 
   return (
     <>
-      <WorkshopTemp />
+      <WorkshopTemp data={page?.workshopPageMeta}/>
     </>
   );
 };

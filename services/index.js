@@ -6,70 +6,97 @@ export const homePageQuery = async () => {
     client.query({
       query: gql`
             query NewQuery {
-              page(id: "1152", idType: DATABASE_ID) {
-                title
-                homePageMeta {
-                  hero {
-                    buttonLink
-                    caption
-                    subTitle
-                    title
-                    backgroundImge {
-                      node {
-                        mediaItemUrl
-                      }
-                    }
-                    image {
-                      node {
-                        mediaItemUrl
-                      }
-                    }
-                  }
-                  leftAndRightSection {
-                    buttonLink
-                    caption
-                    title
-                    image {
-                      node {
-                        mediaItemUrl
-                      }
-                    }
-                  }
-                  meetGiuseppe {
-                    buttonLink
-                    caption
-                    title
-                    image {
-                      node {
-                        mediaItemUrl
-                      }
-                    }
-                  }
-                  steps {
-                    title
-                    caption
-                    buttonLink
-                  }
-                  whatsIncluded {
-                    buttonLink
-                    title
-                    list {
-                      list
-                    }
-                  }
-                  workWithUs {
-                    buttonLink
-                    content
-                    backgroundImage {
-                      node {
-                        mediaItemUrl
-                      }
-                    }
-                  }
+        page(id: "1152", idType: DATABASE_ID) {
+          title
+          homePageMeta {
+            hero {
+              buttonLink
+              caption
+              subTitle
+              title
+              backgroundImge {
+                node {
+                  mediaItemUrl
+                }
+              }
+              image {
+                node {
+                  mediaItemUrl
                 }
               }
             }
-          `,
+            videos {
+              videoUrl
+            }
+            leftAndRightSection {
+              buttonLink
+              caption
+              title
+              picture {
+                node {
+                  mediaItemUrl
+                }
+              }
+            }
+            meetGiuseppe {
+              buttonLink
+              caption
+              title
+              image {
+                node {
+                  mediaItemUrl
+                }
+              }
+            }
+            steps {
+              title
+              caption
+              buttonLink
+            }
+            whatsIncluded {
+              buttonLink
+              title
+              list {
+                list
+              }
+            }
+            workWithUs {
+              buttonLink
+              content
+              backgroundImage {
+                node {
+                  mediaItemUrl
+                }
+              }
+            }
+            freeBook {
+              title
+              buttonLink
+              image {
+                node {
+                  mediaItemUrl
+                }
+              }
+              background {
+                node {
+                  mediaItemUrl
+                }
+              }
+            }
+            review {
+              image {
+                node {
+                  mediaItemUrl
+                }
+              }
+              review {
+                name
+                content
+              }
+            }
+          }
+        }
+      }`,
     }),
   ]);
 
@@ -155,7 +182,7 @@ export const workshopPageQuery = async () => {
                   successStories {
                     caption
                     designation
-                    image {
+                    profileImage {
                       node {
                         mediaItemUrl
                       }
