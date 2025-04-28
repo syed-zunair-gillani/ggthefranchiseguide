@@ -72,7 +72,7 @@ export default async function PodcastPost({ params }: Props) {
     .replace(/<figure class="wp-block-embed[^>]*>.*?<\/figure>/s, "")
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 pt-24">
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Main Content */}
         <article className="lg:w-2/3">

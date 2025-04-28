@@ -15,7 +15,7 @@ export default function PodcastPage({ podcasts }: PodcastPageProps) {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-brand-blue to-brand-blue/90 text-white py-16">
+      <section className="bg-gradient-to-r from-brand-blue to-brand-blue/90 text-white pb-16 pt-32">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/3">
