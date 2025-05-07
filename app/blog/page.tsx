@@ -7,6 +7,7 @@ import { BookOpen } from "lucide-react"
 
 export default async function BlogListing() {
   const posts = await getAllPosts()
+  console.log("🚀 ~ BlogListing ~ posts:", posts)
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -63,21 +64,22 @@ export default async function BlogListing() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Latest Articles</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map(({ node: post }) => (
+            {posts.map(({ node: post }:any) => (
               <article
                 key={post.id}
                 className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                {post.featuredImage && (
+                {/* {post.featuredImage && ( */}
                   <Link href={`/blog/${post.slug}`} className="relative aspect-video">
                     <Image
                       src={post.featuredImage.node.sourceUrl || "/placeholder.svg"}
                       alt={post.featuredImage.node.altText || post.title}
-                      fill
-                      className="object-cover"
+                      width={400}
+                      height={300}
+                      className="object-cover w-full h-[250px]"
                     />
                   </Link>
-                )}
+                {/* )} */}
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-semibold mb-2 line-clamp-2">
                     <Link href={`/blog/${post.slug}`} className="hover:text-brand-blue">

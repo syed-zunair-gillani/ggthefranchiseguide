@@ -142,8 +142,9 @@ export default function PodcastPage({ podcasts }: PodcastPageProps) {
                     <Image
                       src={podcast.featuredImage.node.sourceUrl || "/placeholder.svg"}
                       alt={podcast.featuredImage.node.altText || podcast.title}
-                      fill
-                      className="object-cover"
+                      width={400}
+                      height={300}
+                      className="object-cover w-full h-[250px]"
                     />
                   </Link>
                 )}
