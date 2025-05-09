@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { faqPageQuery } from "@/services";
+import { videoURL } from "@/lib/videoURL";
 
 const Faqs = async () => {
   const page = await faqPageQuery();
@@ -63,7 +64,7 @@ const Faqs = async () => {
                       title="Who is Giuseppe Grammatico?"
                       width="640"
                       height="360"
-                      src={item?.videoUrl}
+                      src={videoURL(item?.videoUrl)}
                       id="widget2"
                     ></iframe>
                   </div>

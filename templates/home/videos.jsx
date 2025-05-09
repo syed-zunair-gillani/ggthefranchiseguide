@@ -1,9 +1,10 @@
+import { videoURL } from '@/lib/videoURL'
 import React from 'react'
 
 const Videos = ({ data }) => {
     return (
         <section className='max-w-[1280px] mx-auto w-full'>
-            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-14 gap-5 px-3">
+            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-14 gap-5 md:gap-8 px-3">
                 {data?.map((item, idx) => (
                     <div key={idx}>
                         <iframe
@@ -14,7 +15,7 @@ const Videos = ({ data }) => {
                             title="Who is Giuseppe Grammatico?"
                             width="640"
                             height="360"
-                            src={item?.videoUrl}
+                            src={videoURL(item?.videoUrl)}
                             id="widget2"
                         ></iframe>
                     </div>

@@ -3,13 +3,13 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Step3 = () => {
+const Step3 = ({data}) => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         {/* Image */}
       <div className="">
         <Image
-          src="/images/press-kit.webp"
+          src={data?.sideImage?.node?.mediaItemUrl || "/images/press-kit.webp"}
           alt="Franchise Consultation"
           width={200}
           height={300}
@@ -23,19 +23,15 @@ const Step3 = () => {
             Step 3
           </h3>
           <h2 className="text-3xl md:text-[40px] font-[700] font_montserrat mt-8 leading-[56px] uppercase">
-          Get Franchise Matches
+          {data?.title}
           </h2>
-          <p className="text-[18px] md:text-[20px] font-[400] leading-[36px] py-4">
-          Helping you find the right franchise matches for you.
-          On the third call, you will work with me to create a personalized franchise model. This model will outline all the characteristics of your ideal business. By doing this, you will have a clear picture of what you are looking for in a franchise.
-          </p>
-          <p className="text-[18px] md:text-[20px] font-[400] leading-[36px]">
-          Once you have created your personalized franchise model, you will move forward in exploring franchises that best meet your characteristics. The next step is to explore 2 to 3 franchise companies that match your model. This means that you will be looking at specific franchises that align with your ideal business characteristics.
-          </p>
+          <div className='content mt-4 font_montserrat'>
+            <div dangerouslySetInnerHTML={{ __html: data?.content}}/>
+          </div>
 
           <div className="mt-12">
             <Link
-              href={`#`}
+              href={data?.buttonLink || '#'}
               className="uppercase bg-[#FBAC17] border-[#FBAC17] text-white py-4 px-6 font-semibold rounded-full  hover:bg-transparent transition-all"
             >
               Get Started

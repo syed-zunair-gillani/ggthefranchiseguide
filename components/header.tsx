@@ -105,14 +105,14 @@ export default function Header() {
               >
                 MEDIA <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-48">
+              <DropdownMenuContent align="start" className="w-48 bg-white">
                 <DropdownMenuGroup>
                   {mediaItems.map((item) => (
                     <DropdownMenuItem key={item.title} asChild>
-                      <Link href={item.href} className={`w-full ${isActive(item.href) ? "text-[#FFA500]" : ""}`}>
+                      <Link href={item.href} className={`w-full !cursor-pointer ${isActive(item.href) ? "text-[#FFA500]" : ""}`}>
                         {item.title}
                       </Link>
-                    </DropdownMenuItem>
+                    </DropdownMenuItem> 
                   ))}
                 </DropdownMenuGroup>
               </DropdownMenuContent>
@@ -128,11 +128,11 @@ export default function Header() {
               >
                 RESOURCES <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-48">
+              <DropdownMenuContent align="start" className="w-48 bg-white">
                 <DropdownMenuGroup>
                   {resourceItems.map((item) => (
                     <DropdownMenuItem key={item.title} asChild>
-                      <Link href={item.href} className={`w-full ${isActive(item.href) ? "text-[#FFA500]" : ""}`}>
+                      <Link href={item.href} className={`w-full !cursor-pointer ${isActive(item.href) ? "text-[#FFA500]" : ""}`}>
                         {item.title}
                       </Link>
                     </DropdownMenuItem>

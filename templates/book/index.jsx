@@ -3,9 +3,9 @@ import React from 'react'
 import BackgroundImage from '../../public/images/book.webp'
 import Link from 'next/link'
 import Image from 'next/image'
+import { videoURL } from '@/lib/videoURL'
 
 const BookTemplate = ({data}) => {
-    console.log("🚀 ~ BookTemplate ~ data:", data)
     return (
         <>
             <main className='min-h-screen w-full bg-cover bg-no-repeat flex justify-center relative' style={{
@@ -20,7 +20,7 @@ const BookTemplate = ({data}) => {
                         <h5 className='text-2xl sm:text-[40px] text-center font-bold mt-10 mb-8'>{data?.main?.title}</h5>
 
                         <div class="aspect-w-16 aspect-h-9">
-                            <iframe src={data?.main?.videoUrl} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src={videoURL(data?.main?.videoUrl)} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
 
                         <h5 className='mt-4 font-bold text-xl sm:text-2xl text-center'>Get Your FREE Copy of "Franchise Freedom"</h5>
@@ -90,7 +90,7 @@ const BookTemplate = ({data}) => {
                         data?.videoUrl?.map((item, idx) => (
                             <div key={idx}>
                                 <div class="aspect-w-16 aspect-h-9">
-                                    <iframe src={item?.videoUrl} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe src={videoURL(item?.videoUrl)} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div className='pt-[1px] bg-gray-800 my-8 max-w-[60%] mx-auto' />
                             </div>

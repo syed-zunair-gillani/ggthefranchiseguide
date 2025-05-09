@@ -275,3 +275,71 @@ export const bookPageQuery = async () => {
 
   return pageRes.data.page;
 }
+
+
+export const howItsWorkPageQuery = async () => {
+  const [pageRes] = await Promise.all([
+    client.query({
+      query: gql`
+            query NewQuery {
+              page(id: "7954", idType: DATABASE_ID) {
+                title
+                howItsWorksPageMeta {
+                  howICanHelp
+                  howICanHelpButtonLink
+                  main {
+                    buttonLinks
+                    caption
+                    title
+                    image {
+                      node {
+                        mediaItemUrl
+                      }
+                    }
+                  }
+                  step1 {
+                    buttonLink
+                    content
+                    title
+                    sideImage {
+                      node {
+                        mediaItemUrl
+                      }
+                    }
+                  }
+                  step3 {
+                    buttonLink
+                    content
+                    title
+                    sideImage {
+                      node {
+                        mediaItemUrl
+                      }
+                    }
+                  }
+                  step4 {
+                    subTitle
+                    title
+                    content
+                    buttonLink
+                    backgroundImage {
+                      node {
+                        mediaItemUrl
+                      }
+                    }
+                  }
+                  steps {
+                    title
+                    caption
+                    buttonLink
+                  }
+                }
+                content
+              }
+            }
+        `,
+    }),
+  ]);
+
+  return pageRes.data.page;
+}
