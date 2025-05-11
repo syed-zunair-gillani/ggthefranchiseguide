@@ -24,7 +24,7 @@ const HowItWork = async () => {
       <Help data={page?.howItsWorksPageMeta?.howICanHelp} link={page?.howItsWorksPageMeta?.howICanHelpButtonLink}/>
       <StepsSection data={page?.howItsWorksPageMeta?.steps}/>
       <Step1 data={page?.howItsWorksPageMeta?.step1}/>
-      <Step2 data={page?.howItsWorksPageMeta?.step1}/>
+      <Step2 data={page?.howItsWorksPageMeta?.step2}/>
       <Step3 data={page?.howItsWorksPageMeta?.step3}/>
       <Step4 data={page?.howItsWorksPageMeta?.step4}/>
     </>

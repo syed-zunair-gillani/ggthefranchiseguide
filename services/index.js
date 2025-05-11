@@ -328,6 +328,20 @@ export const howItsWorkPageQuery = async () => {
                       }
                     }
                   }
+                  step2 {
+                    nodes {
+                      ... on IdentifyYourGoal {
+                        id
+                        title
+                        slug
+                        featuredImage {
+                          node {
+                            mediaItemUrl
+                          }
+                        }
+                      }
+                    }
+                  }
                   steps {
                     title
                     caption
