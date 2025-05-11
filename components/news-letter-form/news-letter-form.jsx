@@ -60,9 +60,9 @@ const NewsLetterForm = () => {
                         Subscribe
                     </button>
 
-                    <div className="flex items-center space-x-2 pt-2">
-                        <input type="checkbox" id="agreebly" className="" />
-                        <label for="agreebly" className="mt-[-2px]">
+                    <div className="flex items-start space-x-2 pt-2">
+                        <input type="checkbox" id="agreebly" className="mt-1.5" />
+                        <label for="agreebly" className="">
                             I agreebly providing my phone number to receive text messages from the business.
                         </label>
                     </div>
