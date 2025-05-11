@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Step3 = ({data}) => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Image */}
       <div className="">
         <Image
@@ -17,7 +17,7 @@ const Step3 = ({data}) => {
         />
       </div>
       {/* Text content */}
-      <div className="container mx-auto px-4 p-6">
+      <div className="container mx-auto px-4 p-6 py-10">
         <div className="font_roboto md:text-xl font-light ">
           <h3 className="text-3xl md:text-[60px] font-[500] font_caveat text-[#0D73B0] italic ">
             Step 3

@@ -12,7 +12,6 @@ import { howItsWorkPageQuery } from "@/services";
 
 const HowItWork = async () => {
   const page = await howItsWorkPageQuery();
-  console.log("🚀 ~ HowItWork ~ page:", page)
 
   if (!page) {
     return notFound();

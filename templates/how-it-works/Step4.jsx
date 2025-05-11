@@ -4,7 +4,6 @@ import React from 'react'
 import BackgroundImage from "../../public/images/book.jpg"
 
 const Step4 = ({data}) => {
-    console.log("🚀 ~ Step4 ~ data:", data)
     return (
         <>
             <section
