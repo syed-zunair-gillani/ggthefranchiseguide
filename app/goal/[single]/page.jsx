@@ -82,7 +82,6 @@ const SingleGoal = async ({ params }) => {
     ]);
     const post = data?.data?.identifyYourGoal
     const { bookCall, main, leftAndRightSection2, leftAndRightSectionCopy, successStoriesCopy } = post.iug
-    console.log("🚀 ~ SingleGoal ~ bookCall:", bookCall)
 
     return (
         <>
