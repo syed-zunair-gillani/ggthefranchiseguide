@@ -81,7 +81,7 @@ export default function PodcastPage({ podcasts }: PodcastPageProps) {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Listen On</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <a
               href="https://podcasts.apple.com/us/podcast/franchise-freedom/id1499864638"
               target="_blank"
@@ -126,6 +126,12 @@ export default function PodcastPage({ podcasts }: PodcastPageProps) {
               </div>
               <span className="font-medium">Audible</span>
             </a>
+          </div> */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <Link target="_blank" href="https://podcasts.apple.com/us/podcast/franchise-freedom/id1499864638"><Image src={'/apple.png'} alt="" width={200} height={120}/></Link>
+            <Link target="_blank" href="https://www.audible.com/podcast/Franchise-Freedom/B08JJP7GZW?qid=1636562575&sr=1-1&ref=a_search_c3_lProduct_1_1"><Image src={'/audiable.png'} alt="" width={200} height={120}/></Link>
+            <Link target="_blank" href="https://open.spotify.com/show/13LTN5UzA57w2dTB4iV0fm"><Image src={'/spotify.png'} alt="" width={200} height={120}/></Link>
+            <Link target="_blank" href="https://www.youtube.com/@ggthefranchiseguide/videos"><Image src={'/youtube.jpeg'} alt="" width={200} height={120}/></Link>
           </div>
         </div>
       </section>

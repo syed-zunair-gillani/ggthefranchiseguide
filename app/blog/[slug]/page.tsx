@@ -175,7 +175,7 @@ export default async function BlogPost({ params }: Props) {
                           alt={recentPost.featuredImage.node.altText || recentPost.title}
                           width={80}
                           height={80}
-                          className="w-20 h-20 object-cover rounded-lg flex-shrink-0"
+                          className="w-40 h-[70px] object-cover rounded-lg flex-shrink-0"
                         />
                       ) : (
                         <div className="w-20 h-20 bg-gray-200 rounded-lg flex-shrink-0" />
