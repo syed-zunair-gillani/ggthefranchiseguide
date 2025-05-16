@@ -36,7 +36,8 @@ export default function Search({ isOpen, onClose }: SearchProps) {
       <DialogContent className="sm:max-w-[425px]">
         <form onSubmit={handleSearch} className="grid gap-4">
           <h4 className="font-medium leading-none">Search</h4>
-          <Input
+          <div className="flex items-center">
+            <Input
             id="search"
             placeholder="Search the site..."
             value={searchTerm}
@@ -44,7 +45,8 @@ export default function Search({ isOpen, onClose }: SearchProps) {
             className="col-span-3"
             autoFocus
           />
-          <Button type="submit">Search</Button>
+          <Button type="submit" className="bg-gray-400 h-[66px]">Search</Button>
+          </div>
         </form>
       </DialogContent>
     </Dialog>

@@ -23,7 +23,7 @@ export default async function SearchResults({
         <ul className="space-y-4">
           {searchResults.map((post) => (
             <li key={post.node.id} className="border-b pb-4">
-              <Link href={`/posts/${post.node.slug}`} className="block">
+              <Link href={`/blog/${post.node.slug}`} className="block">
                 <h2 className="text-xl font-semibold mb-2 text-blue-600 hover:underline">{post.node.title}</h2>
                 <div dangerouslySetInnerHTML={{ __html: post.node.excerpt }} className="text-gray-600" />
               </Link>
