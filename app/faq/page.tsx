@@ -23,11 +23,11 @@ const Faqs = async () => {
         }}
       >
         <div className="!max-w-[1280px] flex flex-col justify-center mx-auto px-3">
-          <div className="max-w-[1000px]">
-            <h2 className="text-left font-bold text-6xl mb-5">
+          <div className="max-w-[1000px] text-white">
+            <h2 className="text-left font-bold text-6xl mb-5 text-shadow-title">
               {page?.faqPageMeta?.main?.title}
             </h2>
-            <p className="font_aleo text-2xl">
+            <p className="font_aleo text-2xl text-shadow-title">
             {page?.faqPageMeta?.main?.caption}
             </p>
           </div>

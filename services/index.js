@@ -110,6 +110,7 @@ export const aboutPageQuery = async () => {
                 query NewQuery {
                     page(id: "1192", idType: DATABASE_ID) {
                         title
+                        content
                         aboutMePageMeta {
                         about {
                             title

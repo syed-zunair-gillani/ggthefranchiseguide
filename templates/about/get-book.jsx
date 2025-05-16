@@ -18,7 +18,7 @@ const GetBook = ({data}) => {
                 </div>
 
                 <Image src="/images/top-divider-white.png" alt="" width="800" height="160" className="w-full absolute top-0 right-0 left-0" />
-                <svg class="w-full absolute bottom-0 right-0 left-0" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <svg fill='#fff' class="w-full absolute bottom-0 right-0 left-0" viewBox="0 0 1000 100" preserveAspectRatio="none">
                     <path d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
                 </svg>
             </section>

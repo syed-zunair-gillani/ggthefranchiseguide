@@ -21,7 +21,7 @@ export default function Footer() {
             href="https://www.facebook.com/GGTheFranchiseGuide"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#1877f2] p-2 rounded-full hover:opacity-80 transition-opacity"
+            className="bg-[#1877f2] p-3 rounded-full hover:opacity-80 transition-opacity"
           >
             <Facebook className="w-6 h-6" />
             <span className="sr-only">Facebook</span>
@@ -30,7 +30,7 @@ export default function Footer() {
             href="https://www.instagram.com/ggthefranchiseguide/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#E4405F] p-2 rounded-full hover:opacity-80 transition-opacity"
+            className="bg-[#E4405F] p-3 rounded-full hover:opacity-80 transition-opacity"
           >
             <Instagram className="w-6 h-6" />
             <span className="sr-only">Instagram</span>
@@ -39,7 +39,7 @@ export default function Footer() {
             href="https://twitter.com/ggfranchguide"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-black p-2 rounded-full hover:opacity-80 transition-opacity border border-white"
+            className="bg-black p-3 rounded-full hover:opacity-80 transition-opacity border border-white"
           >
             <Twitter className="w-6 h-6" />
             <span className="sr-only">Twitter</span>
@@ -48,7 +48,7 @@ export default function Footer() {
             href="https://www.youtube.com/@ggthefranchiseguide"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#FF0000] p-2 rounded-full hover:opacity-80 transition-opacity"
+            className="bg-[#FF0000] p-3 rounded-full hover:opacity-80 transition-opacity"
           >
             <Youtube className="w-6 h-6" />
             <span className="sr-only">YouTube</span>
@@ -57,7 +57,7 @@ export default function Footer() {
             href="https://open.spotify.com/show/13LTN5UzA57w2dTB4iV0fm"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#1DB954] p-2 rounded-full hover:opacity-80 transition-opacity"
+            className="bg-[#1DB954] p-3 rounded-full hover:opacity-80 transition-opacity"
           >
             <Music className="w-6 h-6" />
             <span className="sr-only">Spotify</span>
@@ -66,7 +66,7 @@ export default function Footer() {
             href="https://ggthefranchiseguide.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#21759B] p-2 rounded-full hover:opacity-80 transition-opacity"
+            className="bg-[#21759B] p-3 rounded-full hover:opacity-80 transition-opacity"
           >
             <Globe className="w-6 h-6" />
             <span className="sr-only">Website</span>
@@ -75,18 +75,27 @@ export default function Footer() {
             href="https://www.linkedin.com/company/gg-the-franchise-guide"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#0A66C2] p-2 rounded-full hover:opacity-80 transition-opacity"
+            className="bg-[#0A66C2] p-3 rounded-full hover:opacity-80 transition-opacity"
           >
             <Linkedin className="w-6 h-6" />
             <span className="sr-only">LinkedIn</span>
           </a>
           <a
+            href="https://podcasts.apple.com/us/podcast/franchise-freedom/id1499864638"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#A2AAAD] p-3 rounded-full hover:opacity-80 transition-opacity"
+          >
+            <Apple className="w-6 h-6" />
+            <span className="sr-only">Apple Podcasts</span>
+          </a>
+          <a
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#A2AAAD] p-2 rounded-full hover:opacity-80 transition-opacity"
+            className="bg-[#000000] p-3 rounded-full border hover:opacity-80 transition-opacity"
           >
-            <Apple className="w-6 h-6" />
+            <svg fill="#fff" width="24px" height="24px" viewBox="0 0 24 24"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/></svg>
             <span className="sr-only">Apple Podcasts</span>
           </a>
         </div>
